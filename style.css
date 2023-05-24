@@ -1,152 +1,178 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
-
+    margin: 0;
 }
 
-body > div {
-    height: 25%;
-}
-
-.nav > .logo {
-    margin-right: auto;
-    color: #F9FAF8;
-    font-size: 24px;
-}
-
-.nav {
+.navbar {
+    background-color: #283618;
+    color: #fefae0;
     display: flex;
-    background-color: #1F2937;
-    color: white;
-    padding: 5px 80px 5px;
+    padding: 10px 80px;
+    gap: 20px;
+}
+
+#logo {
+    font-size: 20px;
+}
+
+.pagelink {
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex: auto;
+}
+
+#blurb {
+    max-width: 400px;
+}
+
+#one {
+    background-color: #283618;
+    margin: 0px 0;
+    padding: 30px 80px;
+    display: flex;
     flex: 1 1 auto;
-}
-
-.navlink {
-    align-self: center;
-    margin: 0px 20px 0px;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: #1F2937;
-    color: #F9FAF8;
-    padding: 20px;
-
-}
-
-h1 {
-    margin-bottom: -15px;
-}
-
-.containerone {
-    display: flex;
-    flex: 1 1;
-    background-color: #1F2937;
-    padding: 50px;
-    justify-content: center;
-    gap: 50px;
-    color: #F9FAF8;
-    flex: 1 1 auto;
-}
-
-.containertwo {
-    display: flex;
-    flex: 1 1;
-    flex-direction: column;
-    padding: 50px;
     align-items: center;
-    gap: 50px;
-    flex: 1 1 auto;
-}
-
-.containerthree {
-    display: flex;
-    flex: 1 1;
-    flex-direction: column;
-    padding: 50px;
-    background-color: #E5E7EB;
-}
-
-.containerfour {
-    margin: 50px;
-    display: flex;
-    flex: 1 1;
-    padding: 20px 100px 20px;
-    background-color: #3882F6;
-    color: #E5E7EB;
-    border-radius: 8px;
-    align-items: center;
-}
-
-.quote {
-    font-size: 36px;
-    font-style: italic;
-}
-
-.quotee {
-    align-self: flex-end;
-}
-
-.content {
-    display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.content p {
-    margin-top: 0;
-    text-align: center;
+.left {
+    gap: 10px;
 }
-
-.leftcontent > p {
-    margin: 20px 0 20px;
-}
-
-.imagetwo {
-    width: 100px;
+.left button{
+    align-self: flex-start;
+    background-color: #606c38;
+    color: #fefae0;
+    border: none;
     border-radius: 8px;
+    padding: 8px 16px;
 }
 
-button {
-    width: 80px;
-    padding: 5px;
-    background-color: #3882F6;
+#two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    gap: 10px;
+    background-color: #fefae0;
+}
+
+#three {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    align-items: center;
+    background-color: #606c38;
+    color: #fefae0;
+    gap: 10px;
+
+}
+
+#four {
+    display: flex;
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #283618;
+    color: #fefae0;
+    border-radius: 8px;
+    padding: 40px;
+    align-self: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 480px;
+    max-height: 80px;
+}
+
+#calltext {
+    font-size: 20px;
+    font-weight: 900px;
+}
+
+#four button{
+    color: #fefae0;
+    background-color: #606c38;
     border-radius: 8px;
     border: none;
-    color: #F9FAF8;
+    padding: 8px 16px;
 }
 
-#call {
-    border: 2px solid white;
+#three #quote {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
 }
 
-.leftcontent {
+#three #quotee {
+    align-self: flex-end;
+    margin-right: 40px;
+}
+
+#headingtwo {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #283618;
+}
+
+.imgcontainer {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+}
+
+#imgcontainers {
+    max-width: 200px;
+    text-align: center;
+    
+}
+
+#adventure {
+    height: 250px;
+    width: 500px;
+}
+
+#two img, #two div {
+    max-width: 200px;
+    gap: 20px;
+}
+
+#two img {
+    margin-bottom: 10px;
+    border: solid #606c38 2px;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.container #subtitle {
+    color: #fefae0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.left {
     display: flex;
     flex-direction: column;
+    color: #fefae0;
 }
 
-.heroimage {
-    width: 300px;
-    align-self: center;
+#logo {
+    margin-right: auto;
 }
 
-.herocontainer {
-    align-self: center;
-}
-
-.callbutton {
-    display: flex;
-    align-items: center;
-    margin: 20px 10px 20px;
-}
-
-.callcontent {
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    margin: 0;
+.footer {
+    text-align: center;
+    background-color: #283618;
+    color: #fefae0;
+    padding: 10px;
 }
